@@ -319,14 +319,14 @@ ul {
 
   align-items: center;
   justify-content: space-between;
-  max-width: 275px;
+  max-width: 254px;
 }
 
 .double-btn {
   display: flex;
   border: none;
   font-size: 14px;
-  padding: 15px;
+  padding: 10px;
   gap: 10px;
   font-weight: 700;
   border-radius: 7px;
