@@ -540,9 +540,9 @@ productcards.cards {
   display: grid;
 
   justify-content: center;
-  gap: 12px;
+ 
   grid-template-columns: repeat(4, 1fr);
-  padding: 0px 20px;
+ 
 }
 .card-info {
   padding: 50px 25px 0px 28px;
