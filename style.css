@@ -717,7 +717,7 @@ ul {
     gap: 40px;
 }
 
-.boxes-3 {
+.pricing-tables {
     top: 31px;
     display: flex;
     flex-direction: column;
@@ -728,7 +728,7 @@ ul {
     left: 0.5px;
     position: relative;
 }
-.boxes-3 h3 {
+.pricing-tables h3 {
     font-weight: 700;
     font-size: 24px;
     color: var(--third-color);
@@ -758,7 +758,7 @@ ul {
     font-size: 10px;
     margin: 0;
 }
-.boxes-3 p {
+.pricing-tables p {
     font-size: 14px;
     font-weight: 700;
     line-height: 20px;
@@ -829,11 +829,11 @@ ul {
     width: 120px;
     text-align: center;
 }
-.boxes-3:hover {
+.pricing-tables:hover {
     background-color: #26335d;
     color: whitesmoke;
 }
-.boxes-3 h6 {
+.pricing-tables h6 {
     display: flex;
     max-width: 213px;
     align-items: center;

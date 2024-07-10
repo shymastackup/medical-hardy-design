@@ -150,7 +150,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-    .boxes-3 {
+    .pricing-tables {
         display: flex;
         align-items: center;
     }
@@ -217,7 +217,7 @@
     .content-box h4{
         font-size: 12px;
     }
-    .boxes-3:hover{
+    .pricing-tables:hover{
         display: none;
 
     }
