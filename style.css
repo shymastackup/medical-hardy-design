@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
     font-family: Montserrat, sans-serif;
     box-sizing: border-box;
 }
+
 body {
     margin: 0px;
 }
@@ -12,29 +14,50 @@ body {
     --secondery-color: #252b42;
     --third-color: gray;
 }
+
 .header {
     background-color: azure;
 }
 
-.container {
+.genarel-container {
+    margin: auto;
+    max-width: 1035px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+}
+
+.genarel-container-sec {
     margin: auto;
     max-width: 1035px;
 }
+
+.container {
+    max-width: 1096px;
+    margin: auto;
+}
+
 .screen-gapping {
     padding-left: 20px;
     padding-right: 20px;
 }
+
 .header-page {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 13px;
     max-width: 1200px;
+    gap: 15px;
 }
-.logo {
-    padding-left: 25px;
+
+.logo 
+     {
+       
+        font-size: 23px;
     color: var(--secondery-color);
 }
+
 .logo_sec h6 {
     font-size: 14px;
     font-weight: 700;
@@ -53,14 +76,17 @@ body {
     list-style: none;
     max-width: 100px;
 }
+
 .nav-links .link a {
     text-decoration: none;
 }
+
 .nav-links {
     display: flex;
     gap: 10px;
     font-size: 16px;
     padding: 0px;
+    position: relative;
 }
 
 .header_btn {
@@ -71,6 +97,7 @@ body {
     color: black;
     background: none;
 }
+
 .header-main-buttons {
     display: flex;
     padding-right: 30px;
@@ -83,7 +110,15 @@ body {
 
     justify-content: center;
 }
+
 .hero_sec {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.review-banner {
     display: flex;
 
     align-items: center;
@@ -97,38 +132,341 @@ body {
 .sec_color {
     background-color: azure;
 }
+
 .footer-links {
     color: var(--third-color);
     font-size: 14px;
     font-weight: 700;
     max-width: 400px;
 }
-.footer-icon-bar{
 
-  color: var(--third-color);
-   font-size: 14px;
-   font-weight: 700;
-   max-width: 400px;}
+.footer-icon-bar {
+
+    color: var(--third-color);
+    font-size: 14px;
+    font-weight: 700;
+    max-width: 400px;
+}
+
 a {
     text-decoration: none;
-    max-width: 197px;
     color: var(--primary-color);
     font-weight: 700;
     font-size: 14px;
 }
-ul {
+
+
+
+
+/* Resetting default list styles */
+ul,
+li {
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
+
+/* Styling for the 'Product' link */
+.hover {
+    position: relative;
+    padding: 10px;
+    color: #000;
+    /* Adjust link color */
+    text-decoration: none;
+    /* Remove underline */
+}
+
+/* Hover effect for 'Product' link to display dropdown */
+.hover:hover+.dropdown,
+.dropdown:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    display: flex;
+    flex-direction: column;
+
+    color: black;
+}
+
+/* Styling for the first level dropdown */
+ .dropdown {
+    visibility: hidden;
+    position: absolute;
+    background-color: #97adef;
+
+    /* padding: 22px 18px; */
+    left: 65px;
+    top: 100%;
+    z-index: 25;
+    opacity: 1;
+
+} 
+
+/* Styling for the second level dropdown */
+.dropdown-2 {
+    display: block;
+    position: absolute;
+    background-color: #97adef;
+    color: white;
+    left: 100%;
+    top: 30px;
+    visibility: hidden;
+    /* Adjust width as needed */
+    z-index: 1;
+    /* Ensure dropdown is above other content */
+    opacity: 0;
+}
+
+.sub-product:hover+.dropdown-2,
+.dropdown-2:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    display: flex;
+    flex-direction: column;
+
+    color: black;
+}
+
+/* Styling for the short-product links */
+.short-product {
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 90px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.short-product:hover {
+    background-color: #252b42;
+}
+.gap-5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+/* Hover effect for dropdown items */
+.dropdown li:hover,
+.dropdown-2 li:hover {
+    background-color: white;
+    cursor: pointer;
+}
+/* .dropdown {
+	visibility: hidden;
+	z-index: 1;
+	position: absolute;
+	list-style-type: none;
+	padding: 25px 0;
+	top: 63px;
+	position: fixed;
+	background-color: #23A6F0;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	padding: 13px 13px;
+	border-radius: 3px;
+}  */
+
+
+.hamburger-box {
+    position: relative;
+    visibility: hidden;
+}
+.hamburger-box input{
+    display: none;
+}
+
+.hamburger {
+    /* display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative; */
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    padding: 10px;
+    background-color:darkblue;
+    border-radius: 5px;
+}
+
+.hamburger i {
+    transition: transform 0.3s ease;
+   
+        transition: transform 0.3s ease;
+        color: #fff;
+    
+    
+}
+
+
+.ham-atv {
+    display: none;
+}
+
+#ham:checked ~ .hamburger .ham-atv {
+    display:none;
+
+}
+#ham:not(:checked) ~ .hamburger .ham-atv{
+    display: none;
+}
+
+#ham:checked ~ .hamburger .ham-n-atv {
+    display: inline;
+}
+
+#ham:not(:checked) ~ .hamburger .ham-atv {
+    display: inline;
+}
+
+#ham:not(:checked) ~ .hamburger .ham-n-atv {
+    display: none;
+}
+
+
+.ham-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    flex-direction: column;
+    background:lightskyblue;
+    
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 220px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+
+
+#ham:checked ~ .ham-items {
+    display: flex;
+}
+
+.ham-items li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* .ham-items li a {
+    text-decoration: none;
+    color: #333;
+} */
+.ham-items li a:hover {
+    color: blueviolet;
+}
+.ham-items li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.ham-items li input[type="checkbox"] {
+    display: none;
+}
+.ham-items li label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.sub-ham-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    flex-direction: column;
+    background:lightsteelblue;
+    border: 1px solid #ccc;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+
+
+
+#sub-ham:checked ~ .sub-ham-items {
+    display: flex;
+}
+
+.sub-sub-ham-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    flex-direction: column;
+    background: #e0e0e0;
+    border: 1px solid #ccc;
+    margin-left: 20px;
+}
+
+#sub-sub-ham:checked ~ .sub-sub-ham-items {
+    display: flex;
+}
+.sub-sub-ham-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    flex-direction: column;
+    background: #29B6F6;
+    border: 1px solid #ccc;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+
+
+.ham-btn {
+    padding: 10px;
+    border: none;
+    background: #D32F2F;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.ham-btn:hover {
+    background: #0056b3;
+}
+
+
+.sub-product {
+    width: 100px;
+    display: flex;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.nav-links li a:hover {
+    color: var(--primary-color);
+    background-color: aliceblue;
+}
+
 .btn {
     padding: 5px;
     outline: none;
     border: none;
-
     color: aliceblue;
     background-color: var(--primary-color);
     border-radius: 5px;
     cursor: pointer;
 }
+
 .btn_ {
     padding: 5px;
     outline: none;
@@ -140,9 +478,11 @@ ul {
     border-radius: 5px;
     cursor: pointer;
 }
+
 .btn:hover {
     background-color: rgb(37, 43, 213);
 }
+
 .border-none-btn {
     display: flex;
     align-items: center;
@@ -152,15 +492,18 @@ ul {
     font-size: 14px;
     color: var(--primary-color);
 }
+
 .font-400 {
     font-weight: 700;
 }
+
 .nav {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 60px;
 }
+
 .menu-bar {
     width: 705px;
     height: 96px;
@@ -171,16 +514,19 @@ ul {
     justify-content: baseline;
     gap: 100px;
 }
+
 .nav-links {
     display: flex;
     gap: 13px;
     font-size: smaller;
     font-weight: 600;
 }
+
 .nav-links li a {
     text-decoration: none;
     color: var(--third-color);
 }
+
 .nav-links li a:hover {
     color: var(--primary-color);
     background-color: aliceblue;
@@ -206,13 +552,14 @@ ul {
     font-size: smaller;
 }
 
-.navbar-btn:hover {
+/* .navbar-btn:hover {
     color: blue;
-}
+} */
 .elementer-section {
     padding-top: 50px;
     padding-bottom: 50px;
 }
+
 .menubar {
     flex: 1;
     display: flex;
@@ -224,8 +571,9 @@ ul {
     display: flex;
     flex-direction: column;
     text-align: left;
-    gap: 15px;
+    gap: 20px;
 }
+
 .content-box {
     display: flex;
     flex-direction: column;
@@ -233,11 +581,13 @@ ul {
     padding-left: 25px;
     gap: 23px;
 }
+
 .content-box a {
     display: flex;
     align-items: center;
     gap: 5px;
 }
+
 .content-box h2 {
     width: 100%;
     font-weight: 700;
@@ -262,17 +612,24 @@ ul {
     line-height: 80px;
     letter-spacing: 0.20000000298023224px;
 }
+
 .title-content h2 {
     margin: 0px;
-    max-width: 420px;
+    max-width: 427px;
     padding: 0px;
     color: var(--secondery-color);
     font-size: 40px;
     font-weight: 700;
-    line-height: 50px;
+    line-height: 25px;
     letter-spacing: 0.20000000298023224px;
     text-align: left;
 }
+
+.genarel-genarel-container {
+    margin: auto;
+    max-width: 935px;
+}
+
 .title-content h4 {
     font-size: 14px;
     font-weight: 400;
@@ -283,6 +640,7 @@ ul {
     margin: 0px;
     max-width: 285px;
 }
+
 .fa-brands {
     color: var(--primary-color);
     font-size: 20px;
@@ -298,6 +656,7 @@ ul {
     margin: 0px;
     max-width: 330px;
 }
+
 .title-content h5 {
     color: var(--primary-color);
     font-size: 14px;
@@ -305,6 +664,7 @@ ul {
     margin: 0px;
     max-width: 120px;
 }
+
 .start-vedio-sec {
     width: 84px;
     position: absolute;
@@ -318,6 +678,7 @@ ul {
     /* left: 173px; */
     background-color: var(--primary-color);
 }
+
 .vedio-image {
     border-radius: 5px;
     width: 100%;
@@ -350,6 +711,7 @@ ul {
     justify-content: space-between;
     max-width: 270px;
 }
+
 .double-btn span {
     justify-content: center;
 }
@@ -360,6 +722,7 @@ ul {
     max-width: 200px;
     gap: 10px;
 }
+
 .header-filled-btn {
     background-color: var(--primary-color);
     color: aliceblue;
@@ -374,12 +737,15 @@ ul {
 
     border: 1px solid var(--primary-color);
 }
+
 .vedios-card {
     position: relative;
 }
+
 .vedios-card button {
     border: none;
 }
+
 .sub-mid-rows {
     display: flex;
     flex-direction: row;
@@ -387,6 +753,7 @@ ul {
     align-items: center;
     justify-content: space-between;
 }
+
 .first-row-drsec {
     padding: 0px 120px 0px 0px;
 }
@@ -403,45 +770,55 @@ ul {
     box-shadow: 0px 30px 19px 0px #00000012;
     padding: 20px 25px 25px;
 }
-.box:hover {
+
+/* .box:hover {
     background: var(--primary-color);
     color: white;
-}
-.box:hover .box-image p {
+} */
+/* .box:hover .box-image p {
     color: white;
-}
+} */
 
 .inner-line {
     width: 55px;
     height: 3px;
     background: #e74040;
 }
+
 .inner-red-line {
     width: 94px;
     height: 6px;
     background: #e74040;
 }
+
 /* .inner-line:hover {
   background-color: aliceblue;
 } */
 .referance-line h4 {
-    line-height: 25px;
+    line-height: 28px;
     color: var(--third-color);
     max-width: 410px;
 }
+
 .box-inline-img {
     max-width: 77px;
 }
+
 .box-image {
     display: flex;
     flex-direction: column;
 
     gap: 25px;
 }
+
 .colour-section {
     background: #fff2f3;
 
     padding: 100px 0px 100px 0px;
+}
+
+.tick-mark {
+    color: #f2e8e8;
 }
 
 .box-image p {
@@ -452,23 +829,33 @@ ul {
     color: var(--third-color);
     max-width: 140px;
 }
+
 .box-image h4 {
     max-width: 250px;
     color: var(--secondery-color);
 }
-.box-image h4:hover {
+
+/* .box-image h4:hover {
     color: white;
-}
+} */
 .sub-sec {
     height: 700px;
 }
+
+.table-icon {
+    color: #ffffff;
+    font-size: 30px;
+}
+
 .experts {
     background-color: #e74040;
 }
+
 .various-experts-items {
     background-color: aquamarine;
     align-items: center;
 }
+
 .star-rate {
     background: #26335d;
 
@@ -478,6 +865,7 @@ ul {
     display: flex;
     justify-content: space-between;
 }
+
 .colum-content {
     display: flex;
     flex-direction: column;
@@ -491,26 +879,31 @@ ul {
     width: 230px;
     background-color: #e74040;
 }
+
 .productcards {
     width: 100%;
     gap: 30px;
     display: flex;
 }
+
 .productcards.cards {
     width: 100%;
     padding: 0;
     margin: 0;
     align-items: center;
 }
+
 .productcards.card-sale h6 {
     font-size: 16px;
     margin: 0px;
     line-height: 24px;
     letter-spacing: 0.1px;
 }
+
 .productcards.card-sale span {
     font-size: 20px;
 }
+
 .card-sale span {
     color: gray;
     font-weight: 100;
@@ -520,6 +913,7 @@ ul {
     display: flex;
     width: 100%;
 }
+
 .sale-div {
     background-color: red;
     top: 20px;
@@ -529,6 +923,7 @@ ul {
     border-radius: 3px 0px 0px 0px;
     position: absolute;
 }
+
 .sale-div h6 {
     color: whitesmoke;
     font-size: 14px;
@@ -538,6 +933,7 @@ ul {
     margin: 0;
     max-width: 180px;
 }
+
 .productcard-icon {
     position: absolute;
     bottom: 30px;
@@ -546,10 +942,12 @@ ul {
     width: 100%;
     gap: 8px;
 }
+
 .card-topside {
     position: relative;
     width: 100%;
 }
+
 .card-icon {
     align-items: center;
     border-radius: 44.49px;
@@ -558,6 +956,7 @@ ul {
     display: flex;
     background-color: white;
 }
+
 .applicable-crt {
     border: 1px solid black;
     width: 30px;
@@ -570,6 +969,7 @@ ul {
     border: none;
     padding: 10px;
 }
+
 .fa-play {
     color: white;
     display: flex;
@@ -581,9 +981,11 @@ ul {
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
 }
+
 .card-info {
-    padding: 50px 15px 20px 28px;
+    padding: 15px;
     gap: 5px;
     display: flex;
     flex-direction: column;
@@ -596,16 +998,19 @@ ul {
     align-items: center;
     width: 95%;
 }
+
 .name-rate h4 {
     color: var(--primary-color);
-   
+
     font-size: 13px;
     font-weight: 700;
     text-align: left;
 }
+
 .fa-sharp {
     color: gold;
 }
+
 .name-rate button {
     background-color: #26335d;
     border-radius: 18px;
@@ -620,6 +1025,7 @@ ul {
     margin: 0px;
     font-size: 12px;
 }
+
 .card-info h5 {
     font-size: 14px;
     font-weight: 700;
@@ -628,12 +1034,14 @@ ul {
     padding: 0;
     margin: 0;
 }
+
 .card-info p {
     font-size: 14px;
     font-weight: 400;
     width: 200px;
     color: var(--third-color);
 }
+
 .card-sale {
     display: flex;
     align-items: center;
@@ -650,19 +1058,23 @@ ul {
     margin: 0;
     padding: 5px;
 }
+
 .price {
     display: flex;
     padding: 5px;
     max-width: 30%;
     gap: 10px;
 }
+
 .old-offer {
     font-size: 16px;
     color: var(--third-color);
 }
+
 .new-offer {
     color: #ff7b52;
 }
+
 .product-link {
     display: flex;
     flex-direction: row;
@@ -703,6 +1115,7 @@ ul {
     font-weight: 700;
     line-height: 32px;
 }
+
 .box h6 {
     width: 70px;
     font-size: 14px;
@@ -710,6 +1123,7 @@ ul {
     line-height: 24px;
     text-align: center;
 }
+
 .pricing-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -728,11 +1142,13 @@ ul {
     left: 0.5px;
     position: relative;
 }
+
 .pricing-tables h3 {
     font-weight: 700;
     font-size: 24px;
-    color: var(--third-color);
+    color: var(--secondery-color);
 }
+
 .card-heading {
     font-weight: 700;
     margin: 0px;
@@ -747,17 +1163,20 @@ ul {
     flex-direction: column;
     align-items: center;
 }
+
 .pricing-rate h2 {
     margin: 0;
     color: var(--primary-color);
     font-weight: 700;
     font-size: 30px;
 }
+
 .pricing-rate h6 {
     color: #8ec2f2;
     font-size: 10px;
     margin: 0;
 }
+
 .pricing-tables p {
     font-size: 14px;
     font-weight: 700;
@@ -767,6 +1186,7 @@ ul {
     max-width: 170px;
     color: var(--third-color);
 }
+
 .btn-click {
     border-radius: 5px;
     padding: 15px 70px 15px 70px;
@@ -787,6 +1207,7 @@ ul {
     max-width: 305px;
     line-height: 20px;
 }
+
 .pricing-features:box:hover {
     color: white;
 }
@@ -825,14 +1246,16 @@ ul {
 
     gap: 7px;
 }
+
 .sample-line {
     width: 120px;
     text-align: center;
 }
-.pricing-tables:hover {
+
+/* {
     background-color: #26335d;
-    color: whitesmoke;
-}
+   .pricing-tables:hover color: whitesmoke;
+} */
 .pricing-tables h6 {
     display: flex;
     max-width: 213px;
@@ -843,6 +1266,7 @@ ul {
     letter-spacing: 0.20000000298023224px;
     color: var(--third-color);
 }
+
 .colour {
     background: #fff2f3;
 
@@ -865,14 +1289,17 @@ ul {
 
     align-items: center;
 }
+
 .expert-img {
     border-radius: 61px;
 }
+
 .expert-about {
     line-height: 20px;
     letter-spacing: 0.20000000298023224px;
     text-align: center;
 }
+
 .expert-about p {
     margin: 0px;
     font-size: 14px;
@@ -881,6 +1308,7 @@ ul {
     text-align: center;
     max-width: 300px;
 }
+
 .expert-review {
     display: flex;
     flex-direction: column;
@@ -888,6 +1316,7 @@ ul {
     gap: 20px;
     padding: 0px 0px 60px 0px;
 }
+
 .name-div {
     gap: 10px;
     display: flex;
@@ -895,29 +1324,43 @@ ul {
     flex-direction: column;
     width: 125px;
 }
+
 .icon-img {
-    font-size: 17px;
+    font-size: 20px;
     color: var(--primary-color);
 }
+
 .top-card-icon {
     color: #ffffff;
     font-size: 30px;
 }
+
+.gap-15 {
+    gap: 15px;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
 .name-div h5 {
     font-size: 16px;
     margin: 0px;
     color: var(--secondery-color);
     text-align: center;
 }
+
 .name-div h6 {
     font-size: 14px;
 
     text-align: center;
     color: gray;
 }
+
 .fa-regular {
     color: gold;
 }
+
 .expert-review h6 {
     font-size: 14px;
     font-weight: 700;
@@ -926,19 +1369,20 @@ ul {
     color: var(--third-color);
     margin: 0px;
 }
+
 .expert-review h2 {
     font-size: 40px;
     font-weight: 700;
     line-height: 50px;
     margin: 0px;
 }
+
 .join-section {
-    display: flex;
     text-align: center;
-    flex-direction: column;
     gap: 20px;
     align-items: center;
 }
+
 .join-section h2 {
     margin: 0px;
     max-width: 213px;
@@ -946,6 +1390,7 @@ ul {
     font-weight: 700;
     color: var(--secondery-color);
 }
+
 .join-section h6 {
     margin: 0px;
     color: var(--primary-color);
@@ -954,12 +1399,14 @@ ul {
     font-weight: 700;
     max-width: 70px;
 }
+
 .email-entering {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
 }
+
 .join-section p {
     font-size: 14px;
     font-weight: 400;
@@ -969,6 +1416,7 @@ ul {
     color: var(--third-color);
     margin: 0px;
 }
+
 .subscribe-section {
     display: flex;
     justify-content: center;
@@ -983,6 +1431,7 @@ ul {
     justify-content: center;
     width: 100%;
 }
+
 .subscribe-form input {
     border: none;
     outline: none;
@@ -991,6 +1440,7 @@ ul {
     width: 100%;
     font-weight: 700;
 }
+
 .subscribe-form button {
     max-width: 200px;
     background-color: var(--primary-color);
@@ -1001,6 +1451,7 @@ ul {
     align-items: center;
     border-radius: 0px 5px 5px 0px;
 }
+
 .input {
     width: 522px;
     height: 41px;
@@ -1011,22 +1462,27 @@ ul {
     flex-direction: row;
     justify-content: space-evenly;
 }
+
 .icon-about {
     display: flex;
     align-items: center;
-    gap: 10px;
+    /* gap: 10px; */
     line-height: 20px;
 }
+
 .footer-color {
     background: #fafafa;
 }
+
 .icon-about small {
     max-width: 200px;
 }
+
 .icon {
     gap: 15px;
     display: flex;
 }
+
 .sub-footer {
     display: flex;
     align-items: center;
@@ -1035,25 +1491,30 @@ ul {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
 .footer-section-link-box {
     display: grid;
     align-items: center;
     grid-template-columns: repeat(5, 1fr);
 }
+
 .pricing-features h5 {
     font-weight: 700px;
     font-size: 16px;
     color: var(--secondery-color);
 }
+
 .pricing-features {
     font-weight: 700px;
     font-size: 14px;
     display: flex;
     max-width: 300px;
 }
+
 .footer-bg {
     background: #fafafa;
 }
+
 h1,
 h2,
 h3,

@@ -123,6 +123,12 @@
     .button-section {
         padding: 10px;
     }
+    .pricing-cards {
+        display: grid;
+        grid-template-columns:repeat(3,1fr);
+        align-items: center;
+    }
+
 
     .card-info {
         text-align: center;
@@ -137,7 +143,45 @@
         max-width: 50%;
     }
 }
+@media only screen and (max-width: 800px) {
+    .nav-links{
+        display: none;
+    }
+    .menubar{
+        padding: 0px;
+    }
+    .header-main-buttons{
+        padding: 0px;
+    }
+    .screen-gapping{
+        padding-top: 30px;
+    }
+    .pricing-cards {
+        display: grid;
+        grid-template-columns:repeat(2,1fr);
+        align-items: center;
+    }
+    label .Hamburger {
+        display: block;
+        color: black;
+       padding: 8px;
+       display: flex;
+      font-size: 23px;
+       max-width: 30px;
+      }
+      .hamburger-box{
+        visibility: visible;
+      }
+      .nav-links{
+        display: none;
+    }
+    .header-main-buttons .border-none-btn{
+    display: none;
+    }
 
+
+
+}
 @media only screen and (max-width: 520px) {
     .sub-mid-section {
         grid-template-columns: repeat(1, 1fr);
@@ -186,11 +230,30 @@
     .content-box h2 {
         width: 100%;
     }
-}
+    .pricing-cards {
+        
+        grid-template-columns:repeat(1,1fr);
+       
+        align-items: center;
+    }
+    .review-banner {
+        display: grid;
+      grid-template-columns: repeat(1,1fr);
+    }
+    .title-content h2 {
+        text-align: center;
+        font-size: 35px;
+    }
+    }
+
+
 @media only screen and (max-width: 320px) {
     .title-content {
         gap: 10px;
     }
+    .logo{
+        font-size: 17px;}
+    
     .title-content h1 {
         font-size: 32px;
         line-height: 50px;
@@ -230,6 +293,10 @@
     .expert-review h6{
         font-size: 12px;
     }
+    .elementer-section{
+        padding: 0px;
+        margin: 0px;
+    }
     .join-section p{
         font-size: 12px;
     }
@@ -255,4 +322,20 @@
         }
         .icon-img {
             font-size: 14px;}
+            .subscribe-form button{
+                padding: 6px;
+            }
+            .subscribe-section{
+                width: 83%;
+            }
+            .subscribe-form input{
+                padding: 6px;
+            }
+            .review-banner{
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+            }
+            .title-content h2{
+                font-size: 28px;
+            }
 }

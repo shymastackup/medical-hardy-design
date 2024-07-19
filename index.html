@@ -29,19 +29,60 @@
   <!--navbar-->
   <section class="bgsection">
     <header class="header">
-      <div class="container screen-gapping">
+      <div class="genarel-container-sec screen-gapping">
         <div class="header-page">
+          <div class="hamburger-box">
+            <input type="checkbox" id="ham">
+            <label for="ham" class="hamburger">
+              <i class="fa-solid fa-bars ham-atv ham-icn-size"></i>
+              <i class="fa-solid fa-xmark ham-icn-size  ham-n-atv"></i>
+            </label>
+            <ul class="ham-items">
+              <li><a href="#">Home</a></li>
+              <li>
+                <input type="checkbox" id="sub-ham">
+                <label for="sub-ham" class="ham-lab">Product
+                  <i class="fa-solid fa-caret-down"></i>
+                </label>
+                <ul class="sub-ham-items">
+                  <li><a href="#">Product</a></li>
+                  <li><a href="#">Product</a></li>
+                </label>
+
+              </ul>
+              </li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Contact</a></li>
+              <button class="btn ham-btn">Login</button>
+            </ul>
+          </div>
+
           <h2 class="logo">Medical Hardy</h2>
           <div class="menubar">
             <nav class="nav">
               <ul class="nav-links">
-                <li class="link"><a href="#">Home</a></li>
-                <li class="link"><a href="#">Product</a></li>
-
-                <li class="link"><a href="#">Pricing</a></li>
-                <li class="link"><a href="#">Contact</a></li>
+                <li class="link gap-5"><a href="#">Home</a></li>
+                <li class="link ">
+                  <a href="#" class="hover gap-5">Product <i class="fa-solid fa-caret-down"></i></a>
+                  <ul class="dropdown">
+                    <li><a class="sub-product" href="#">product-1</a></li>
+                    <li>
+                      <a class="sub-product gap-5" href="#">product-2<i class="fa-solid fa-caret-right"></i></a>
+                      <ul class="dropdown-2">
+                        <li><a class="short-product" href="#">product-1</a></li>
+                        <li><a class="short-product" href="#">product-2</a></li>
+                      </ul>
+                    </li>
+                    <li><a class="sub-product" href="#">product-3</a></li>
+                    <li><a class="sub-product" href="#">product-4</a></li>
+                  </ul>
+                </li>
+                <li class="link gap-5"><a href="#">Pricing</a></li>
+                <li class="link gap-5"><a href="#">Contact</a></li>
               </ul>
             </nav>
+
+
             <div class="header-main-buttons">
               <button class="button-section border-none-btn font-400">
                 Login
@@ -57,7 +98,7 @@
   </section>
   <!--section online---------------------------------------------------------------------------->
   <section class="sec_color">
-    <div class="container screen-gapping">
+    <div class="container screen-gapping ">
       <div class="hero_sec">
         <div class="title-content">
           <h5>Online</h5>
@@ -80,7 +121,7 @@
   </section>
   <!--section practice---------------------------------------------------------------------------->
   <section class="elementer-section">
-    <div class="container screen-gapping">
+    <div class="genarel-container screen-gapping">
       <div class="content-section">
         <div class="title-content">
           <h5>Practice</h5>
@@ -127,8 +168,7 @@
               <img class="box-inline-img" src="image/picture-4.png" alt="" />
               <h4>Book now join</h4>
               <div class="inner-line"></div>
-              <p
-              >The gradual accumulation of information about</p>
+              <p>The gradual accumulation of information about</p>
             </div>
           </div>
         </div>
@@ -138,7 +178,7 @@
 
   <!--dr-specialize------------------------------------------------------------------------>
   <section class="elementer-section">
-    <div class="container screen-gapping">
+    <div class="genarel-container screen-gapping">
       <div class="content-section">
         <div class="sub-mid-rows">
           <img src="image/dr-img.png" alt="" />
@@ -158,7 +198,7 @@
   </section>
   <!--vedio-specialize-------------------------------------------------------------->
   <section class="elementer-section">
-    <div class="container screen-gapping">
+    <div class="genarel-container screen-gapping ">
       <div class="content-section">
         <div class="sub-mid-rows">
           <div class="content-box">
@@ -182,7 +222,7 @@
   </section>
   <!--meeting-expert-------------------------------------------------------------------------->
   <section class="elementer-section">
-    <div class="container screen-gapping">
+    <div class="genarel-container screen-gapping ">
       <div class="content-section">
         <div class="title-content">
           <h5>Courses</h5>
@@ -227,7 +267,7 @@
                   <h6 class="rating-num">4.5</h6>
                 </button>
               </div>
-              <h5>sit amet nulla facilisi morbi</h5>
+              <h5>magna fringilla urna porttitor</h5>
               <p>We focus on ergonomics and meeting you....</p>
               <div class="card-sale">
                 <span class="material-symbols-outlined" style="color: gray; font-weight: 100">
@@ -275,7 +315,7 @@
                   <h6 class="rating-num">4.5</h6>
                 </button>
               </div>
-              <h5>bibendum arcu vitae arcu</h5>
+              <h5>magna fringilla urna porttitor</h5>
               <p>We focus on ergonomics and meeting you....</p>
               <div class="card-sale">
                 <span class="material-symbols-outlined" style="color: gray; font-weight: 100">
@@ -396,7 +436,7 @@
   </section>
   <!-- practice-advice ------------------------------------------------------------------->
   <section class="elementer-section">
-    <div class="container screen-gapping">
+    <div class="genarel-container screen-gapping ">
       <div class="content-section">
         <div class="title-content">
           <h5>Practice Advice</h5>
@@ -413,7 +453,7 @@
         <div class="pricing-cards">
           <div class="pricing-tables">
             <button class="productcard-like-icon">
-              <i class="fa-solid fa-heart" style="color: #ffffff; font-size: 30px"></i>
+              <i class="fa-solid fa-heart table-icon"></i>
             </button>
             <h3>FREE</h3>
             <h6 class="sample-line">Organize across all apps by hand</h6>
@@ -426,7 +466,7 @@
             <div class="pricing-features">
               <div class="checking">
                 <div class="applicable-crt">
-                  <i class="fa-solid fa-check" style="color: #f2e8e8"></i>
+                  <i class="fa-solid fa-check tick-mark"></i>
                 </div>
 
                 <h6 class="updates">Unlimited product updates</h6>
@@ -434,7 +474,7 @@
 
               <div class="checking">
                 <div class="applicable-crt">
-                  <i class="fa-solid fa-check" style="color: #f2e8e8"></i>
+                  <i class="fa-solid fa-check tick-mark"></i>
                 </div>
 
                 <h6 class="updates">Unlimited product updates</h6>
@@ -442,21 +482,21 @@
 
               <div class="checking">
                 <div class="applicable-crt">
-                  <i class="fa-solid fa-check" style="color: #f2e8e8"></i>
+                  <i class="fa-solid fa-check tick-mark"></i>
                 </div>
                 <h6 class="updates">Unlimited product updates</h6>
               </div>
 
               <div class="not-checking">
                 <div class="nonapplicable-crt">
-                  <i class="fa-solid fa-check" style="color: #f2e8e8"></i>
+                  <i class="fa-solid fa-check tick-mark"></i>
                 </div>
                 <h6 class="updates">1GB Cloud storage</h6>
               </div>
 
               <div class="not-checking">
-                <div class="nonapplicable-crt">
-                  <i class="fa-solid fa-check" style="color: #f2e8e8"></i>
+                <div class="non applicable-crt">
+                  <i class="fa-solid fa-check tick-mark"></i>
                 </div>
                 <h6 class="updates">Email and community support</h6>
               </div>
@@ -470,7 +510,7 @@
             </div>
 
             <button class="productcard-like-icon">
-              <i class="fa-solid fa-heart" style="color: #ffffff; font-size: 30px"></i>
+              <i class="fa-solid fa-heart table-icon"></i>
             </button>
             <h3>FREE</h3>
             <h6 class="sample-line">Organize across all apps by hand</h6>
@@ -483,33 +523,33 @@
             <div class="pricing-features">
               <div class="checking">
                 <div class="applicable-crt">
-                  <i class="fa-solid fa-check" style="color: #f2e8e8"></i>
+                  <i class="fa-solid fa-check tick-mark"></i>
                 </div>
 
                 <h6 class="updates">Unlimited product updates</h6>
               </div>
               <div class="checking">
                 <div class="applicable-crt">
-                  <i class="fa-solid fa-check" style="color: #f2e8e8"></i>
+                  <i class="fa-solid fa-check tick-mark"></i>
                 </div>
 
                 <h6 class="updates">Unlimited product updates</h6>
               </div>
               <div class="checking">
                 <div class="applicable-crt">
-                  <i class="fa-solid fa-check" style="color: #f2e8e8"></i>
+                  <i class="fa-solid fa-check tick-mark"></i>
                 </div>
                 <h6 class="updates">Unlimited product updates</h6>
               </div>
               <div class="not-checking">
                 <div class="nonapplicable-crt">
-                  <i class="fa-solid fa-check" style="color: #f2e8e8"></i>
+                  <i class="fa-solid fa-check tick-mark"></i>
                 </div>
                 <h6 class="updates">1GB Cloud storage</h6>
               </div>
               <div class="not-checking">
                 <div class="nonapplicable-crt">
-                  <i class="fa-solid fa-check" style="color: #f2e8e8"></i>
+                  <i class="fa-solid fa-check  tick-mark"></i>
                 </div>
                 <h6 class="updates">Email and community support</h6>
               </div>
@@ -520,7 +560,7 @@
 
           <div class="pricing-tables">
             <button class="productcard-like-icon">
-              <i class="fa-solid fa-heart" style="color: #ffffff; font-size: 30px;"></i>
+              <i class="fa-solid fa-heart table-icon "></i>
             </button>
             <h3>FREE</h3>
             <h6 class="sample-line">Organize across all apps by hand</h6>
@@ -533,33 +573,33 @@
             <div class="pricing-features">
               <div class="checking">
                 <div class="applicable-crt">
-                  <i class="fa-solid fa-check" style="color: #f2e8e8"></i>
+                  <i class="fa-solid fa-check tick-mark"></i>
                 </div>
 
                 <h6 class="updates">Unlimited product updates</h6>
               </div>
               <div class="checking">
                 <div class="applicable-crt">
-                  <i class="fa-solid fa-check" style="color: #f2e8e8"></i>
+                  <i class="fa-solid fa-check tick-mark"></i>
                 </div>
 
                 <h6 class="updates">Unlimited product updates</h6>
               </div>
               <div class="checking">
                 <div class="applicable-crt">
-                  <i class="fa-solid fa-check" style="color: #f2e8e8"></i>
+                  <i class="fa-solid fa-check tick-mark"></i>
                 </div>
                 <h6 class="updates">Unlimited product updates</h6>
               </div>
               <div class="not-checking">
                 <div class="nonapplicable-crt">
-                  <i class="fa-solid fa-check" style="color: #f2e8e8"></i>
+                  <i class="fa-solid fa-check tick-mark"></i>
                 </div>
                 <h6 class="updates">1GB Cloud storage</h6>
               </div>
               <div class="not-checking">
                 <div class="nonapplicable-crt">
-                  <i class="fa-solid fa-check" style="color: #f2e8e8"></i>
+                  <i class="fa-solid fa-check tick-mark"></i>
                 </div>
                 <h6 class="updates-1">Email and community support</h6>
               </div>
@@ -571,7 +611,7 @@
   </section>
   <!-- !section-experts--------------------------------------------------------------- -->
   <section class="elementer-section">
-    <div class="container screen-gapping">
+    <div class="genarel-container screen-gapping ">
       <div class="content-section">
         <div class="title-content">
           <h5>Testimonials</h5>
@@ -585,7 +625,7 @@
         </div>
         <!-- !image-experts -------------------------------------------------------------->
 
-        <div class="hero_sec">
+        <div class="review-banner">
           <div class="expert-review">
             <img class="expert-img" src="./image/experts-img.png" alt="" />
             <div class="expert-about">
@@ -626,15 +666,15 @@
               <h6>Designer</h6>
             </div>
           </div>
+          <!-- </div> -->
         </div>
       </div>
-    </div>
   </section>
   <!-- email-sub-sec------------------------------------------------------------------------------>
   <section class="colour-section">
-    <div class="container screen-gapping">
+    <div class="container screen-gapping ">
       <div class="email-entering">
-        <div class="join-section">
+        <div class="title-content join-section">
           <h6>Newsletter</h6>
           <h2>JOIN US</h2>
           <p>
@@ -688,15 +728,15 @@
             </div>
             <div class="pricing-features">
               <h5>Get In Touch</h5>
-              <div class="icon-about">
+              <div class="icon-about gap-10">
                 <i class="fa-solid fa-phone icon-img"></i>
                 <a class="footer-links" href="tel:(480) 555-0103">(480) 555-0103</a>
               </div>
-              <div class="icon-about">
+              <div class="icon-about gap-15">
                 <i class="fa-solid fa-location-dot icon-img"></i>
                 <a class="footer-links" href="#">4517 Washington Ave. Manchester, Kentucky 39495</a>
               </div>
-              <div class="icon-about">
+              <div class="icon-about gap-10">
                 <i class="fa-solid fa-envelope icon-img"></i>
                 <a class="footer-links" href="mailto:debra.holt@example.com">debra.holt@example.com
                 </a>
@@ -704,12 +744,12 @@
             </div>
           </div>
         </div>
-        </section>
+    </section>
     <!-- !footer-icon-------------------------------------------------------------------- -->
-       <section class="footer-bg">
-        <div class="container screen-gapping">
-          <div class="sub-footer">
-          <div class="line">
+    <section class="footer-bg">
+      <div class="container screen-gapping ">
+        <div class="sub-footer">
+          <div class="end-line">
             <h6 class="footer-icon-bar">
               Made With Love By Figmaland All Right Reserved
             </h6>
@@ -724,4 +764,5 @@
     </section>
   </footer>
 </body>
+
 </html>
