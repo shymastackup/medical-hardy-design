@@ -25,6 +25,10 @@
         display: flex;
         justify-content: center;
     }
+    .button-section {
+        padding: 6px;
+        padding-left: 7px;
+    }
 
     .box-image h5 {
         max-width: 154px;
@@ -120,15 +124,11 @@
         gap: 20px;
     }
 
-    .button-section {
-        padding: 10px;
-    }
     .pricing-cards {
         display: grid;
-        grid-template-columns:repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
         align-items: center;
     }
-
 
     .card-info {
         text-align: center;
@@ -144,47 +144,58 @@
     }
 }
 @media only screen and (max-width: 800px) {
-    .nav-links{
+    .nav-links {
         display: none;
     }
-    .menubar{
+    .menubar {
         padding: 0px;
     }
-    .header-main-buttons{
+    .header-main-buttons {
         padding: 0px;
     }
-    .screen-gapping{
+    .screen-gapping {
         padding-top: 30px;
     }
     .pricing-cards {
         display: grid;
-        grid-template-columns:repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         align-items: center;
     }
     label .Hamburger {
         display: block;
         color: black;
-       padding: 8px;
-       display: flex;
-      font-size: 23px;
-       max-width: 30px;
-      }
-      .hamburger-box{
+        padding: 8px;
+        display: flex;
+        font-size: 23px;
+        max-width: 30px;
+    }
+    .hamburger-box {
         visibility: visible;
-      }
-      .nav-links{
+    }
+    .nav-links {
         display: none;
     }
-    .header-main-buttons .border-none-btn{
-    display: none;
+    .header-main-buttons .border-none-btn {
+        display: none;
     }
-
-
-
+}
+@media only screen and(max-width: 550px) {
+    .button-section {
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .title-content h1 {
+        font-size: 45px;
+        line-height: 50px;
+    }
 }
 @media only screen and (max-width: 520px) {
     .sub-mid-section {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .title-content h1 {
+        font-size: 45px;
+        line-height: 50px;
     }
 
     .Product-cards {
@@ -217,6 +228,13 @@
     .footer-icon-bar {
         text-align: center;
     }
+    .footer-section-link-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .pricing-features {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 }
 
 @media only screen and (max-width: 470px) {
@@ -224,39 +242,45 @@
         font-size: 40px;
         line-height: 60px;
     }
-    .button-section {
-        font-size: 10px;
+    .referance-line h4 {
+        line-height: 20px;
     }
     .content-box h2 {
+        font-size: 25px;
         width: 100%;
     }
+    a {
+        font-weight: 500;
+        font-size: 10px;
+    }
+
     .pricing-cards {
-        
-        grid-template-columns:repeat(1,1fr);
-       
+        grid-template-columns: repeat(1, 1fr);
+
         align-items: center;
     }
     .review-banner {
         display: grid;
-      grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
     .title-content h2 {
         text-align: center;
         font-size: 35px;
     }
+    .button-section {
+        font-size: 10px;
+        font-weight: 500;
     }
-
+}
 
 @media only screen and (max-width: 320px) {
     .title-content {
         gap: 10px;
     }
-    .logo{
-        font-size: 17px;}
-    
+
     .title-content h1 {
-        font-size: 32px;
-        line-height: 50px;
+        font-size: 25px;
+        line-height: 30px;
     }
     .title-content h4 {
         font-size: 12px;
@@ -269,73 +293,75 @@
         font-size: 34px;
         max-width: 100%;
     }
-    .box-image p{
+    .box-image p {
         font-size: 12px;
         max-width: 80%;
     }
-    .content-box h2{
-        font-size: 29px;
-
+    .content-box h2 {
+        font-size: 25px;
     }
-    .content-box h4{
+    .content-box h4 {
         font-size: 12px;
     }
-    .pricing-tables:hover{
+    .pricing-tables:hover {
         display: none;
-
     }
-    .expert-about p{
+    .expert-about p {
         font-size: 12px;
     }
-    .name-div h5{
+    .name-div h5 {
         font-size: 15px;
     }
-    .expert-review h6{
+    .expert-review h6 {
         font-size: 12px;
     }
-    .elementer-section{
+    .elementer-section {
         padding: 0px;
         margin: 0px;
     }
-    .join-section p{
+    .join-section p {
         font-size: 12px;
     }
-    .join-section h6{
+    .join-section h6 {
         font-size: 12px;
     }
-    
 
-    .join-section h2{
+    .join-section h2 {
         font-size: 34px;
     }
     .footer-section-link-box {
-       
-        grid-template-columns: repeat(1, 1fr);}
-        .pricing-features h5{
-            font-size: 14px;
-        }
-        .footer-links{
-            font-size: 12px;
-        }
-        .footer-icon-bar{
-            font-size: 12px;
-        }
-        .icon-img {
-            font-size: 14px;}
-            .subscribe-form button{
-                padding: 6px;
-            }
-            .subscribe-section{
-                width: 83%;
-            }
-            .subscribe-form input{
-                padding: 6px;
-            }
-            .review-banner{
-                display: grid;
-                grid-template-columns: repeat(1,1fr);
-            }
-            .title-content h2{
-                font-size: 28px;
-            }
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .pricing-features h5 {
+        font-size: 14px;
+    }
+    .footer-links {
+        font-size: 12px;
+    }
+    .footer-icon-bar {
+        font-size: 12px;
+    }
+    .icon-img {
+        font-size: 14px;
+    }
+    .subscribe-form button {
+        padding: 6px;
+    }
+    .subscribe-section {
+        width: 83%;
+    }
+    .subscribe-form input {
+        padding: 6px;
+    }
+    .review-banner {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .title-content h2 {
+        font-size: 28px;
+    }
+    .logo {
+        font-size: 17px;
+        padding-left: 4px;
+    }
 }
